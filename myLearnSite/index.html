@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css"></link>
+	<link rel="stylesheet" type="text/css" href="css/light.css" id="theme-link">
+	<link href="img/icon/icon.ico" rel="icon" type="image/x-icon"></link>
+	<title>myLearnSite</title>
+</head>
+	<body>
+	
+		<div class="all">
+			<header class="header">
+				
+				<div class="menu">
+					
+						<a href="#" class="menu__text">Гл. Страница</a>
+						<a href="" class="menu__text">Будние дни</a>
+						<a href="" class="menu__text">Выходные дни</a>
+						<a href="" class="menu__text">Праздничные дни</a>
+						<button class="theme-button" id="theme-button"><span>theme</span></button>
+
+				</div>
+
+			</header>
+
+				<div class="content">
+
+				
+
+
+				</div>
+
+			<footer class="footer">
+				
+				<div class="footerDiv">
+					<div class="textKont"><b>Контакты связи:</b></div>
+					<div class="Kont"><b><span class="KontText1">Telegram</span> — <span class="KontText">@dazeroth</span>;</b></div>
+					<div class="Kont2"><b><span class="KontText2">Discord</span> — <span class="KontText">dazeroth_#7777</span>;</b></div>
+					<div class="Kont3"><b><span class="KontText3">Instagram</span> — <span class="KontText"><a target="_blank" href="https://www.instagram.com/dazeroth_/">[Тык]</a></span>;</b></div>
+				</div>
+
+			</footer>
+		</div>
+
+	</body>
+	<script>
+		var btn = document.getElementById("theme-button");
+		var link = document.getElementById("theme-link");
+
+		btn.addEventListener("click", function () { ChangeTheme(); });
+
+		function ChangeTheme()
+		{
+			let lightTheme = "css/light.css";
+			let darkTheme = "css/dark.css";
+
+			var currTheme = link.getAttribute("href");
+			var theme = "";
+
+			if(currTheme == lightTheme)
+			{
+				currTheme = darkTheme;
+				theme = "dark";
+			}
+			else
+			{    
+				currTheme = lightTheme;
+				theme = "light";
+			}
+
+			link.setAttribute("href", currTheme);
+
+			Save(theme);
+		}		
+	</script>
+</html>

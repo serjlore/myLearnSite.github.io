@@ -1,0 +1,51 @@
+body{
+	background-image: url(../img/night.jpg);
+	background-attachment: fixed;
+}
+
+/* header dev */
+.header{
+	background-color: #5c658e;
+	opacity: .8;
+}
+
+/* content dev */
+.content{
+	padding: 0.5%;
+	background-color: #606060;
+	opacity: .8;
+}
+
+.menu__text{
+	color: black;
+}
+.menu__text:hover{
+	color: red;
+}
+
+.theme-button span{display: none;}
+.theme-button:after{content: "Light Theme";}
+.theme-button {
+	color: #fff;
+	background-color: #74a8ef;
+	border: solid 1px gray;
+	box-shadow: 0 1px #545454;
+}
+.theme-button:hover {background-color: #4c6f9e}
+.theme-button:active {
+	border: solid 1px gray;
+	box-shadow: 0 1px #757575;
+	background-color: #2b405c;
+}
+
+/* footer dev */
+.footer{
+	background-color: #5c658e;
+	opacity: .8;
+}
+
+.textKont{color: black;}
+.KontText{color: purple;}
+.KontText1{color: #1051b3;}
+.KontText2{color: #2b1d47;}
+.KontText3{color: #a81d2d;}
